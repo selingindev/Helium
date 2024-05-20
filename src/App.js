@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 
-import Login from './assets/componentes/pages/login/login';
-
+import ContainerEntrar from './assets/componentes/microsComponentes/containerLoginCdastro/ContainerEntrar';
 function App() {
   return (
     <div className="App">
-      <Login/>
+     <ContainerEntrar/> 
     </div>
   );
 }
