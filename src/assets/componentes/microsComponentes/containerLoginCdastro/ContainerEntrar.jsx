@@ -1,11 +1,10 @@
 import Login from "../../pages/login/login"
-import Cadastro from '../../pages/cadastro/ca'
+import Cadastro from '../../pages/cadastro/Cadastro'
 
-  const ContainerEntrar = () => {
+  export default function ContainerEntrar()  {
         return(
-        <div>
+        <div className="">
             <Login/>
             <Cadastro/>
         </div>)
     }
-    export default ContainerEntrar

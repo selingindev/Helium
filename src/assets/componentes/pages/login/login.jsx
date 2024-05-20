@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
 
-import ContainerEntrar from '../../microsComponentes/containerLoginCdastro/ContainerEntrar';
 
 const Login = () => {
   const [username, setUsername] = useState('');
