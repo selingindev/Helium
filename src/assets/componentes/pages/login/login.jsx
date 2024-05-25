@@ -16,23 +16,26 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="bg-slate-400 h-[100vh] flex flex-col justify-center items-center">
       {!loggedIn ? (
   
-          <form className='loginForm'>
+          <form className='bg-white w-[50%] h-[50%] flex flex-col justify-center items-center'>
             <input
               type="text"
               placeholder="Username"
               value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={(e) => setUsername(e.target.value)} 
+              className='w-[80%] h-16 shadow-2xl hover:scale-110 duration-500 transition ease-in-out rounded-xl pl-2'
             />
+            <div className='py-5'></div>
             <input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className='w-[80%] h-16 shadow-2xl hover:scale-110 duration-500 transition ease-in-out rounded-xl pl-2'
             />
-            <button type="button" onClick={handleLogin}>
+            <button type="button" onClick={handleLogin} className='bg-slate-400 text-2xl py-4 px-40 rounded-2xl mt-10 text-white hover:bg-slate-700 hover:scale-110 duration-500 transition ease-in-out '>
               Login
             </button>
           </form>
